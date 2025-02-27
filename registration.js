@@ -1,7 +1,7 @@
 // registration.js
 async function registerClient(event) {
   event.preventDefault();
-  const form = document.getElementById('wf-form-reg_form');
+  const form = document.getElementById('reg_form');
   const formData = new FormData(form);
   
   try {
@@ -23,4 +23,4 @@ async function registerClient(event) {
   }
 }
 
-document.getElementById('wf-form-reg_form').addEventListener('Submit', registerClient);
+document.getElementById('reg_form').addEventListener('Submit', registerClient);
